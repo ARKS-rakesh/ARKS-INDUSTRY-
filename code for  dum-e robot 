@@ -1,0 +1,41 @@
+int lmt1=5;
+int lmt2=3;
+int rmt1=6;
+int rmt2=11;
+int bmt1=7;
+int bmt2=8;
+void setup(){
+pinMode(lmt1, OUTPUT);
+pinMode(lmt2, OUTPUT);
+pinMode(rmt1, OUTPUT);
+pinMode(rmt2, OUTPUT);
+pinMode(bmt1, OUTPUT);
+pinMode(bmt2, OUTPUT);
+}
+
+void loop(){
+analogWrite(lmt1, 255);
+analogWrite(lmt2, 0);
+analogWrite(lmt1, 0);
+analogWrite(lmt2, 255);
+analogWrite(lmt1, 0);
+analogWrite(lmt2, 0);
+delay(150);
+analogWrite(rmt1, 255);
+analogWrite(rmt2, 0);
+analogWrite(rmt1, 0);
+analogWrite(rmt2, 255);
+analogWrite(rmt1, 0);
+analogWrite(rmt2, 0);
+delay(150);
+analogWrite(bmt1, 255);
+analogWrite(bmt2, 0);
+delay(3000);
+analogWrite(bmt1, 0);
+analogWrite(bmt2, 0);
+delay(1000);
+analogWrite(bmt1, 0);
+analogWrite(bmt2, 255);
+delay(1000);
+}
+}
